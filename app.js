@@ -50,7 +50,7 @@ function ask(question) {
     return new Promise(resolve => rl.question(question, ans => { rl.close(); resolve(ans.trim()); }));
 }
 async function main() {
-    const UUID = await getVariableValue('UUID', '');
+    const UUID = await getVariableValue('UUID', '09851029-474e-4f96-bbb5-8763c5712b90');
     console.log('你的UUID:', UUID);
 
     const PORT = await getVariableValue('PORT', '');
